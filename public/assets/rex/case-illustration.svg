@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 280" role="img" aria-label=";;NAB@0F8O :59A0 FMCG">
+  <defs>
+    <linearGradient id="ci" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#edf2fa"/>
+      <stop offset="100%" stop-color="#f5efe4"/>
+    </linearGradient>
+    <linearGradient id="cb" x1="0" y1="1" x2="0" y2="0">
+      <stop offset="0%" stop-color="#1a2744"/>
+      <stop offset="100%" stop-color="#2d6cbc"/>
+    </linearGradient>
+  </defs>
+  <rect width="480" height="280" rx="16" fill="url(#ci)"/>
+  <rect x="32" y="40" width="140" height="90" rx="10" fill="#fff" stroke="rgba(30,90,168,0.15)"/>
+  <rect x="48" y="100" width="20" height="18" rx="3" fill="url(#cb)"/>
+  <rect x="76" y="88" width="20" height="30" rx="3" fill="url(#cb)" opacity="0.8"/>
+  <rect x="104" y="76" width="20" height="42" rx="3" fill="#c9a962"/>
+  <rect x="132" y="92" width="20" height="26" rx="3" fill="url(#cb)" opacity="0.7"/>
+  <path d="M200 200 L240 160 L280 175 L320 130 L360 110 L400 95" fill="none" stroke="#c9a962" stroke-width="3" stroke-linecap="round"/>
+  <circle cx="320" cy="130" r="28" fill="none" stroke="#1e5aa8" stroke-width="6" stroke-dasharray="120 176" stroke-linecap="round" transform="rotate(-90 320 130)"/>
+  <text x="320" y="136" text-anchor="middle" fill="#1a2744" font-size="14" font-weight="700">+24%</text>
+  <rect x="200" y="48" width="248" height="72" rx="10" fill="rgba(26,39,68,0.06)"/>
+  <text x="220" y="72" fill="#3d4d68" font-size="11" font-weight="600">8AB@81CF8O � 0C48B � ?;0=</text>
+  <line x1="220" y1="88" x2="420" y2="88" stroke="rgba(30,90,168,0.25)" stroke-width="4" stroke-linecap="round"/>
+  <line x1="220" y1="88" x2="360" y2="88" stroke="#1e5aa8" stroke-width="4" stroke-linecap="round"/>
+</svg>

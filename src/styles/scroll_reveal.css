@@ -1,0 +1,76 @@
+/* Без анимации до первой инициализации — убирает «дрожание» при открытии */
+html:not(.reveal-ready) .reveal {
+  transition: none !important;
+}
+
+/* Если observer не успел — через 2 с блоки всё равно видны */
+html:not(.reveal-ready) .reveal {
+  animation: reveal-fallback-show 0.01s ease 2s forwards;
+}
+
+@keyframes reveal-fallback-show {
+  to {
+    opacity: 1 !important;
+    transform: translateY(0) !important;
+    pointer-events: auto !important;
+  }
+}
+
+/* Как в «сайт компании — копия»: 0.75s ease, translateY(26px) */
+.reveal {
+  opacity: 0 !important;
+  transform: translateY(26px) !important;
+  pointer-events: none !important;
+  transition:
+    opacity 0.75s ease !important,
+    transform 0.75s ease !important;
+  transition-delay: var(--delay, 0ms) !important;
+}
+
+.reveal.is-visible {
+  opacity: 1 !important;
+  transform: translateY(0) !important;
+  pointer-events: auto !important;
+}
+
+.plankit-page .reveal {
+  transform: translateY(24px) scale(0.985) !important;
+}
+
+.plankit-page .reveal.is-visible {
+  transform: translateY(0) scale(1) !important;
+}
+
+/* Plankit: не скрывать контент глобальным reveal */
+.plankit-page .reveal,
+.plankit-page .reveal:not(.is-visible) {
+  opacity: 1 !important;
+  transform: translateY(0) scale(1) !important;
+  pointer-events: auto !important;
+}
+
+.case-page .reveal {
+  transform: translateY(22px) !important;
+}
+
+.case-page .reveal.is-visible {
+  transform: translateY(0) !important;
+}
+
+/* Не отключать reveal при reduce-motion — только убрать длительность (блоки всё равно появляются при скролле) */
+@media (prefers-reduced-motion: reduce) {
+  .reveal,
+  .reveal.is-visible {
+    transition: none !important;
+  }
+
+  .plankit-page .reveal,
+  .plankit-page .reveal.is-visible {
+    transform: translateY(0) !important;
+  }
+
+  .case-page .reveal,
+  .case-page .reveal.is-visible {
+    transform: translateY(0) !important;
+  }
+}
