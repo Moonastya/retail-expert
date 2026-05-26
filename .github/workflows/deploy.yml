@@ -32,7 +32,7 @@ jobs:
 
       - name: Build
         env:
-          GITHUB_ACTIONS: true
+          VITE_BASE_PATH: /retail-expert/
         run: npm run build
 
       - name: SPA fallback for GitHub Pages
