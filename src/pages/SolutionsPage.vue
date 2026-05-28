@@ -35,7 +35,7 @@
 
     <section class="solutions-facts">
       <div class="container">
-        <h2 class="reveal">Ключевые факты из презентации</h2>
+        <h2 class="reveal">Ключевые факты</h2>
         <div class="solutions-facts-grid">
           <article
             v-for="(item, i) in facts"
