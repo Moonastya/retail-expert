@@ -2,9 +2,9 @@
   <section ref="root_el" class="sol-tabs" :class="{ 'sol-tabs--on': visible }">
     <header class="sol-tabs__head">
       <p class="eyebrow reveal" style="--delay: 0ms">Решения Retail Expert</p>
-      <h2 class="reveal" style="--delay: 60ms">Полный стек продуктовой аналитики из презентации</h2>
+      <h2 class="reveal" style="--delay: 60ms">Полный стек продуктовой аналитики</h2>
       <p class="reveal" style="--delay: 120ms">
-        Вкладки повторяют структуру продуктовой презентации: данные в основе, ключевые KPI и
+        Вкладки показывают структуру продуктовых решений: данные в основе, ключевые KPI и
         процесс внедрения. Все графики отрисованы вручную в SVG и анимируются при просмотре.
       </p>
     </header>

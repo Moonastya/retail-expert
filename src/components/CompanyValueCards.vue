@@ -13,7 +13,7 @@
       <p class="eyebrow reveal">Единый дата-партнёр</p>
       <h2 class="reveal" style="--delay: 60ms">От сбора данных до готовой аналитики</h2>
       <p class="co-values-lead reveal" style="--delay: 120ms">
-        Шесть опор Retail Expert — как в корпоративной презентации: покрытие, гранулярность,
+        Шесть опор Retail Expert: покрытие, гранулярность,
         удобство, масштаб базы, точность и безопасность доступа.
       </p>
     </header>
