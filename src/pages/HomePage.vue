@@ -181,7 +181,7 @@
                 :key="cell.name"
                 :name="cell.name"
                 :variant="cell.variant"
-                :logo_domain="cell.logo_domain"
+                :logo="cell.logo"
                 :reveal_delay="`${40 + i * 40}ms`"
               />
             </div>
@@ -273,3 +273,13 @@ const case_steps = [
 
 use_page_reveal()
 </script>
+
+<style scoped>
+.home-trust-wordmark {
+  color: rgba(22, 215, 196, 0.85);
+}
+
+.home-clients-lead {
+  color: #a8b8d4;
+}
+</style>

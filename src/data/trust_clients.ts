@@ -1,35 +1,35 @@
 /**
- * Блок «Нам доверяют»: названия как на слайде + favicon по домену сайта бренда.
- * Домены подобраны вручную; при ошибке загрузки показывается монограмма (см. TrustClientChip).
+ * Блок «Нам доверяют»: логотипы из src/assets/trust (через Vite).
  */
+import { resolve_trust_logo } from './trust_logo_urls'
+
 export type TrustTileVariant = 'blue' | 'white'
 
 export type TrustClientEntry = {
   name: string
   variant: TrustTileVariant
-  /** Домен для https://www.google.com/s2/favicons — без схемы, напр. x5.ru */
-  logo_domain?: string
+  logo: string
 }
 
 export const TRUST_CLIENTS: TrustClientEntry[] = [
-  { name: 'X5 Group', variant: 'blue', logo_domain: 'x5.ru' },
-  { name: 'Магнит', variant: 'blue', logo_domain: 'magnit.ru' },
-  { name: 'Лента', variant: 'white', logo_domain: 'lenta.com' },
-  { name: 'ЭКО', variant: 'blue', logo_domain: 'ecoproduct.ru' },
-  { name: 'Heinz', variant: 'blue', logo_domain: 'heinz.com' },
-  { name: 'Русский Стандарт', variant: 'white', logo_domain: 'rustandard.ru' },
-  { name: 'simple', variant: 'white' },
-  { name: 'Савушкин продукт', variant: 'blue', logo_domain: 'savushkin.ru' },
-  { name: 'Campari', variant: 'white', logo_domain: 'campari.com' },
-  { name: 'Beluga', variant: 'white', logo_domain: 'belugagroup.com' },
-  { name: 'Bacardi', variant: 'blue', logo_domain: 'bacardi.com' },
-  { name: 'Мистраль', variant: 'white' },
-  { name: 'Grass.su', variant: 'white', logo_domain: 'grass.su' },
-  { name: 'Балтика', variant: 'blue', logo_domain: 'baltika.ru' },
-  { name: 'Splat', variant: 'blue', logo_domain: 'splatglobal.com' },
-  { name: 'Pepsi', variant: 'blue', logo_domain: 'pepsi.com' },
-  { name: 'Bonduelle', variant: 'blue', logo_domain: 'bonduelle.com' },
-  { name: 'Jacobs', variant: 'white', logo_domain: 'jacobsdouweegberts.com' },
-  { name: 'Mars', variant: 'blue', logo_domain: 'mars.com' },
-  { name: 'Cotton Club', variant: 'white', logo_domain: 'cottonclub.ru' },
+  { name: 'X5 Group', variant: 'blue', logo: resolve_trust_logo('x5.png') },
+  { name: 'Магнит', variant: 'blue', logo: resolve_trust_logo('magnit.png') },
+  { name: 'Лента', variant: 'white', logo: resolve_trust_logo('lenta.png') },
+  { name: 'ЭКО', variant: 'blue', logo: resolve_trust_logo('eko.png') },
+  { name: 'Heinz', variant: 'blue', logo: resolve_trust_logo('heinz.png') },
+  { name: 'Русский Стандарт', variant: 'white', logo: resolve_trust_logo('rustandard.png') },
+  { name: 'simple', variant: 'white', logo: resolve_trust_logo('simple.png') },
+  { name: 'Савушкин продукт', variant: 'blue', logo: resolve_trust_logo('savushkin.png') },
+  { name: 'Campari', variant: 'white', logo: resolve_trust_logo('campari.png') },
+  { name: 'Beluga', variant: 'white', logo: resolve_trust_logo('beluga.png') },
+  { name: 'Bacardi', variant: 'blue', logo: resolve_trust_logo('bacardi.png') },
+  { name: 'Мистраль', variant: 'white', logo: resolve_trust_logo('mistral.png') },
+  { name: 'Grass.su', variant: 'white', logo: resolve_trust_logo('grass.png') },
+  { name: 'Балтика', variant: 'blue', logo: resolve_trust_logo('baltika.png') },
+  { name: 'Splat', variant: 'blue', logo: resolve_trust_logo('splat.svg') },
+  { name: 'Pepsi', variant: 'blue', logo: resolve_trust_logo('pepsi.png') },
+  { name: 'Bonduelle', variant: 'blue', logo: resolve_trust_logo('bonduelle.png') },
+  { name: 'Jacobs', variant: 'white', logo: resolve_trust_logo('jacobs.svg') },
+  { name: 'Mars', variant: 'blue', logo: resolve_trust_logo('mars.png') },
+  { name: 'Cotton Club', variant: 'white', logo: resolve_trust_logo('cottonclub.png') },
 ]
