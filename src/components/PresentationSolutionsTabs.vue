@@ -3,10 +3,6 @@
     <header class="sol-tabs__head">
       <p class="eyebrow reveal" style="--delay: 0ms">Решения Retail Expert</p>
       <h2 class="reveal" style="--delay: 60ms">Полный стек продуктовой аналитики</h2>
-      <p class="reveal" style="--delay: 120ms">
-        Вкладки показывают структуру продуктовых решений: данные в основе, ключевые KPI и
-        процесс внедрения. Все графики отрисованы вручную в SVG и анимируются при просмотре.
-      </p>
     </header>
 
     <div class="sol-tabs__nav" role="tablist" aria-label="Вкладки продуктовых решений">
@@ -236,8 +232,11 @@ onUnmounted(() => observer?.disconnect())
   border: 1px solid rgba(255, 255, 255, 0.12);
   border-radius: 20px;
   padding: 20px;
-  background: rgba(255, 255, 255, 0.06);
-  backdrop-filter: blur(12px);
+  background: linear-gradient(
+    155deg,
+    rgba(22, 36, 62, 0.92) 0%,
+    rgba(14, 24, 44, 0.96) 100%
+  );
 }
 .sol-tabs__lead {
   color: var(--text-soft);
@@ -250,10 +249,17 @@ onUnmounted(() => observer?.disconnect())
 }
 .sol-tabs__chips span {
   border-radius: 999px;
-  padding: 5px 10px;
-  font-size: 12px;
-  background: rgba(22, 215, 196, 0.12);
+  padding: 7px 12px;
+  font-size: 13px;
+  font-weight: 600;
+  line-height: 1.35;
+  letter-spacing: 0.01em;
+  color: #eef8ff;
+  background: rgba(10, 18, 36, 0.92);
   border: 1px solid rgba(22, 215, 196, 0.35);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
 }
 .sol-tabs__content h4 {
   margin: 14px 0 8px;
@@ -270,6 +276,8 @@ onUnmounted(() => observer?.disconnect())
   width: 100%;
   height: auto;
   display: block;
+  shape-rendering: geometricPrecision;
+  text-rendering: optimizeLegibility;
 }
 .sol-chart__grid line {
   stroke: rgba(255, 255, 255, 0.15);

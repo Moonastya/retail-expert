@@ -4,10 +4,6 @@
       <div class="container reveal">
         <p class="eyebrow">Retail Expert Solutions</p>
         <h1>Продуктовые решения Retail Expert в формате интерактивных вкладок</h1>
-        <p class="solutions-hero__lead">
-          Собрали все ключевые блоки решений: продуктовые направления, источники данных,
-          показатели, процессы и графики с анимацией.
-        </p>
       </div>
     </section>
 

@@ -539,12 +539,18 @@ defineProps({
 }
 
 .rex-product__outcome {
-  padding: 8px 14px;
+  padding: 9px 14px;
   border-radius: 999px;
-  background: rgba(255, 255, 255, 0.12);
-  font-size: 11px;
-  font-weight: 700;
+  border: 1px solid rgba(22, 215, 196, 0.28);
+  background: rgba(10, 18, 36, 0.92);
+  font-size: 13px;
+  font-weight: 600;
+  line-height: 1.35;
+  letter-spacing: 0.01em;
   color: #eef8ff;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
 }
 
 .rex-product--live .rex-product__outcome {
@@ -557,12 +563,12 @@ defineProps({
 @keyframes rex-outcome-glow {
   0%,
   100% {
-    filter: brightness(1);
-    transform: scale(1);
+    border-color: rgba(22, 215, 196, 0.28);
+    box-shadow: 0 0 0 rgba(22, 215, 196, 0);
   }
   50% {
-    filter: brightness(1.15);
-    transform: scale(1.03);
+    border-color: rgba(22, 215, 196, 0.5);
+    box-shadow: 0 0 14px rgba(22, 215, 196, 0.16);
   }
 }
 
